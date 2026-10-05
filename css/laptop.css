@@ -1,0 +1,5 @@
+/* Float columns follow Week 3 fluid.css; the footer clears both floats. */
+#wrapper { width: 88%; }
+header { float: left; width: 24%; padding: 2%; }
+#content { float: right; width: 64%; padding: 3%; }
+form { width: 95%; }

@@ -1,0 +1,6 @@
+/* Tablet: the class breakpoints with a stacked layout. */
+#wrapper { width: 94%; }
+header, #content { float: none; }
+nav a { display: inline-block; margin-right: 5px; }
+form { width: 90%; }
+h1 { font-size: 32px; }

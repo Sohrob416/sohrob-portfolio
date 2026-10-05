@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me | Sohrob Niazi</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- Separate viewport stylesheets follow Week 3 responsive.html. -->
+<link rel="stylesheet" href="css/laptop.css" media="only screen and (min-width:960px)">
+<link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:959px)">
+<link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width:480px)">
+</head>
+<body>
+<div id="wrapper">
+<!-- Semantic header, nav, article, section and footer follow semantic.html. -->
+<header><h1>Sohrob Niazi</h1><p>Networking and IT Security Student</p>
+<nav><p><a href="index.html">Home</a> <a href="about.html">About Me</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a></p></nav></header>
+<div id="content">
+<section><h2>Get in touch</h2>
+<p>You can email me at <a href="mailto:sohrob.niazi@ontariotechu.net">sohrob.niazi@ontariotechu.net</a> or fill out the form below.</p>
+<p>Submitting this form opens your email app. Review the message there and send it to contact me.</p>
+<!-- Form submission follows Week 3 form.html. Each label matches its input id. -->
+<form action="mailto:sohrob.niazi@ontariotechu.net" method="post" enctype="text/plain" name="contact_form">
+<p><label for="name">Name</label><br>
+<input type="text" id="name" name="name" placeholder="Enter your name" required></p>
+<p><label for="email">Email</label><br>
+<input type="email" id="email" name="email" placeholder="Enter your email" required></p>
+<!-- pattern is an addition to the supplied lecture code; see README. -->
+<p><label for="phone">Cell number (10 digits, no spaces)</label><br>
+<input type="tel" id="phone" name="phone" placeholder="4165550123" pattern="[0-9]{10}" title="Enter exactly 10 digits without spaces or dashes" required></p>
+<p><label for="comments">Comments</label><br>
+<textarea id="comments" name="comments" rows="6" cols="30" required></textarea></p>
+<p><input class="button" type="submit" value="Submit"> <input class="button" type="reset" value="Reset"></p>
+</form></section>
+</div>
+<footer><p>Contact: <a href="mailto:sohrob.niazi@ontariotechu.net">sohrob.niazi@ontariotechu.net</a></p>
+<p>&copy; 2026 Sohrob Niazi</p></footer>
+</div>
+</body>
+</html>

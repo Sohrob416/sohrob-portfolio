@@ -1,0 +1,12 @@
+/* Mobile uses the class 480px breakpoint and percentage widths. */
+@media only screen and (max-width:480px) {
+    #wrapper { width: 96%; margin: 10px auto; }
+    header, footer, #content { padding: 15px; float: none; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 24px; }
+    .portrait { width: 90%; }
+    form { width: 100%; }
+    input { width: 85%; }
+    .button { width: auto; }
+    footer p { font-size: 12px; }
+}

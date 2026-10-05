@@ -1,0 +1,73 @@
+/* Colours and spacing use the Week 1 and Week 3 CSS patterns. */
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: #302B25;
+    background: linear-gradient(to bottom, #DED3BA 0%, #F7F1E5 100%);
+}
+#wrapper {
+    margin: 25px auto;
+    background-color: #F7F1E5;
+    border: 1px solid #756D52;
+}
+header {
+    background: linear-gradient(135deg, #542B35 0%, #773F43 100%);
+    color: #F7F1E5;
+    padding: 20px;
+}
+h1 { font-size: 36px; }
+h2 { font-size: 28px; color: #542B35; }
+h3 { font-size: 22px; color: #542B35; }
+p { line-height: 1.7; }
+a { color: #542B35; }
+header a { color: #F7F1E5; }
+nav a {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #F7F1E5;
+    text-decoration: none;
+}
+nav a:hover { background-color: #F7F1E5; color: #542B35; }
+#content { padding: 20px; }
+section { margin-bottom: 25px; }
+.intro {
+    padding: 20px;
+    background-color: #E8DFC9;
+    border-left: 5px solid #756D52;
+}
+.project {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-top: 2px solid #756D52;
+}
+.button {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #542B35;
+    color: #F7F1E5;
+    border: 1px solid #542B35;
+    font-size: 16px;
+    text-decoration: none;
+}
+.button:hover { background-color: #773F43; }
+input, textarea {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    color: #302B25;
+    border: 1px solid #756D52;
+}
+input { padding: 8px; }
+textarea { width: 90%; }
+img, video { width: 100%; }
+.portrait { width: 60%; margin-left: 0; }
+figcaption { padding-top: 5px; }
+footer {
+    clear: both;
+    padding: 20px;
+    background-color: #E8DFC9;
+    border-top: 2px solid #756D52;
+}
