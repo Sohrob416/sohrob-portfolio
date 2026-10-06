@@ -1,62 +1,61 @@
-# Sohrob Niazi - Personal Portfolio
+Sohrob Niazi Personal Portfolio
 
-## Current status
-First draft. Four pages and responsive CSS are present. This draft is NOT ready for submission: the video is 44.2 seconds and must be replaced with a 45-60 second take; official validation and GitHub publishing remain outstanding.
+Website links
+ Live website: https://sohrob416.github.io/sohrob-portfolio/
+ GitHub repository: https://github.com/Sohrob416/sohrob-portfolio
 
-## Pages
-- index.html: introduction and navigation.
-- about.html: education, work and interests. Own photo and introduction video included; current video needs a slightly longer replacement.
-- projects.html: four school projects supplied by Sohrob.
-- contact.html: name, email, cell number, comments, submit and reset.
+About this website
+This portfolio introduces me it talks about my education, hobbies ,school projects, work and more. It has four pages:
+ index.html: home page and introduction where it explains a little bit about me what this website is and where to view my projects.
+ about.html: This page goes more into detail about me there is also a photo of me alongside a video where I go into detail about myself.
+ projects.html: This page shows some of the projects I've created over the years which include: Java racing game, Java hotel reception program, networking topology and Java mines game.
+ contact.html: This page includes a form with name, email, cell number and comments in case you have any questions and want to contact me. 
 
-## Lecture sources and authorship
-Adapted lecture patterns provided by course instructor Ahmed Sheikh for INFR3120:
-- Week1(1).zip / index.html and index.css: wrapper, navigation links, fonts, colours, margins, padding, gradients, borders and hover styles.
-- Week2.zip / videos.html: the video controls, source and poster pattern to use when personal media is supplied.
-- Week3 Code.zip / semantic.html: header, nav, article, section, footer and email links.
-- Week3 Code.zip / form.html: labels, fields, required, email input, textarea, submit/reset and mailto submission.
-- Week3 Code.zip / responsive.html, fluid.css, tablet.css and smartphone.css: viewport metadata, percentage widths and separate viewport stylesheets.
-- Week-4.pdf: display:inline-block and line-height.
+Class examples used
 
-The page content and styles adapt these patterns to this portfolio. Lecture examples contain mistakes; this project corrects label associations and document structure rather than copying those mistakes.
+ Class examples were used in making the website. Week 1 assisted in making the layout and navigation and colours. Week 2 assisted me in embedding the video and the video controls. Week 3      helped in making the page design, contact form and layout for various screen sizes. I used inline-block and line height from week 4.
 
-## Addition requiring confirmation
-The assignment requires phone validation. The supplied form examples do not demonstrate type="tel", pattern or title. The phone field uses pattern="[0-9]{10}" to accept exactly ten digits; [0-9] means a digit and {10} means ten occurrences. This addition is explicitly identified in the HTML. Confirm it is within the permitted course material before final submission. Email validation and required fields follow the class examples.
 
-## Responsive design
-- Mobile: up to 480px. A 96% wrapper, stacked navigation and smaller padding preserve space.
-- Tablet: 481-959px. A 94% wrapper and navigation across the top.
-- Laptop: 960px and above. An 88% wrapper with a floated left header and right content column. The footer uses clear:both, following the lecture pattern.
-The breakpoints match Week 3. Percentage widths make the layout fluid. No Flexbox, Grid, framework or JavaScript is used.
+Responsive layout
+ All pages have their styles using css/style.css file. Separate CSS files were created for phone, tablets, and laptop displays. For the phone display, the links of the menu appear one  below the other in a vertical order. For the tablet display, the menu will be along the top. The menu appears on the left while the content is shown on the right side on the laptop display.Percentage widths help the website adjust to different screen sizes.
 
-## Style and colour scheme
-A warm cream background, burgundy navigation and olive borders give the website a simple paper-like appearance. Georgia is the main font, using the same font-family property taught in class. Projects are divided with borders instead of rounded cards.
-Colours: #F7F1E5 (cream), #E8DFC9 (sand), #542B35 (burgundy), #773F43 (muted red), #756D52 (olive), #302B25 (dark brown).
-The palette still needs documenting in Adobe Color for the assignment.
+Colour scheme
+ I used a custom palette in Adobe Color with these five colours:
+ #F7F1E5: cream background.
+ #E8DFC9: sand panels and footer.
+ #542B35: dark burgundy.
+ #773F43: muted red.
+ #756D52: olive borders.
+ ![My Adobe Color palette](media/color-palette.png)
 
-## Gradients
-- style.css body: vertical linear gradient from #DED3BA to #F7F1E5.
-- style.css header: 135-degree angle linear gradient from #542B35 to #773F43.
+ The cream and sand colors create a warm background. Burgundy color emphasizes navigation and buttons. The olive color is for the borders. The dark brown color is for the body text.
+ Georgia font is used throughout. The borders separate the projects.
+ 
+Gradients
+ The page background fades from darker cream to lighter cream. The header fades diagonally from dark burgundy to muted red at 135 degrees. Both gradients are in css/style.css.
 
-## Form behaviour
-The mailto form follows the lecture and opens the visitor's configured email app after browser validation. It does not automatically deliver a message or store submissions. Test with a configured email app.
+Contact form
+ The form uses required fields and an email input for browser validation. The phone field requires exactly 10 digits, with no spaces.
+ Tel, pattern, and title were used for phone validation website used for this: (https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/tel?utm_source)
+ 
+The form uses mailto and the method used in the class example. It will open up the visitor's configured email program and the visitor has to send the email from there.
 
-## Remaining work and validation
-- Replace the current 44.2 second video with a 45-60 second recording. Controls and a poster image are included.
-- Confirm phone validation syntax and Adobe Color scheme requirement.
-- Validate all four HTML files with W3C Markup Validation Service.
-- Validate all CSS with W3C CSS Validation Service.
-- Run W3C Link Checker on the deployed website.
-- Spell-check and test all pages with WAVE.
-- Inspect mobile, tablet and laptop layouts and test invalid/valid form inputs.
-- Create a public GitHub repository. Commit real development stages as they happen; do not invent earlier history.
-- Publish with GitHub Pages and add the live site and repository links here.
-- Submit the final ZIP, live site link and repository link on Canvas.
+Testing
+ There were no issues identified in Nu HTML Checker while validating all four HTML pages; the About page was validated a second time after inserting the written introduction.
+ CSS validation checks did not detect any errors.
+ W3C Link Checker did not detect any HTTP links to be broken in the results analyzed; however, it was unable to validate the mailto link since email-link checking is disabled.
+ WAVE did not detect any errors or contrast errors in all four pages.
+ WAVE detected the video on the About page to be reviewed manually for accessibility.
+ WAVE also detected a redundant email link on the Contact page. The redundant link was modified; however, the warning persisted in the last result examined.
+ Spelling has been manually verified and Grammarly was used .
 
-Official validator and WAVE checks have NOT yet been performed. Local link and structural checks are not substitutes.
+Media and remaining checks
+The photo and introduction video are my own. The poster image is a frame from the video. A written introduction summary is included below the video.
 
-## Media
-The photo and video were supplied by Sohrob. The video poster is a frame from his recording.
+Final checks still needed: mobile, tablet and laptop layouts, keyboard navigation and video playback.
 
-## Open locally
-Extract the ZIP and open index.html in a browser. Keep all pages and the css folder together.
+Publishing
+The website is hosted with GitHub Pages from the main branch and root folder. Files and later changes were committed and pushed using Git commands.
+
+Open locally
+Open index.html in a browser. Keep the HTML files, css folder and media folder together.
