@@ -1,5 +1,13 @@
-/* Float columns follow Week 3 fluid.css; the footer clears both floats. */
+/* Make the website 88% of the available page width. */
 #wrapper { width: 88%; }
+
+/* Put the header and menu on the left.
+   Set its width to 24% and add spacing inside it. */
 header { float: left; width: 24%; padding: 2%; }
+
+/* Put the page content on the right.
+   Set its width to 64% and add spacing inside it. */
 #content { float: right; width: 64%; padding: 3%; }
+
+/* Make the form 95% of its container's width. */
 form { width: 95%; }

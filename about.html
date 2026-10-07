@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Set the character encoding and match the page width to the device screen. -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Me | Sohrob Niazi</title>
+
+<!-- Load the main styles used on all pages. -->
 <link rel="stylesheet" href="css/style.css">
-<!-- Separate viewport stylesheets follow Week 3 responsive.html. -->
+
+<!-- Week 3 responsive.html: load a layout stylesheet based on screen width. -->
 <link rel="stylesheet" href="css/laptop.css" media="only screen and (min-width:960px)">
 <link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:959px)">
 <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width:480px)">
 </head>
 <body>
+<!-- The wrapper groups the page for sizing and positioning with CSS. -->
 <div id="wrapper">
-<!-- Semantic header, nav, article, section and footer follow semantic.html. -->
+
+<!-- Page structure follows Week 3 semantic.html. -->
 <header><h1>Sohrob Niazi</h1><p>Networking and IT Security Student</p>
+
+<!-- Navigation links connect the four pages. -->
 <nav><p><a href="index.html">Home</a> <a href="about.html">About Me</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a></p></nav></header>
+
 <div id="content">
+<!-- The article groups my background, photo and introduction video. -->
 <article>
 <h2>A little about me</h2>
 <p>I am studying Networking and IT Security at Ontario Tech University. I previously studied Computer Science at university for one year before switching to IT.</p>
 <p>I currently work as a Store Investigator at TJX. Outside of school and work, I enjoy running, lifting weights, calisthenics, hanging out with friends, and going out to eat.</p>
+
 <section><h2>My photo</h2>
-<!-- Image and figure follow the Week 3 semantic.html example. -->
+<!-- figure groups the photo with its caption.  src gives the image location, and alt describes it for screen readers or when the image cannot load. The portrait class controls its size. -->
 <figure class="portrait">
 <img src="media/sohrob.jpeg" alt="Sohrob Niazi sitting at a restaurant table">
 <figcaption>Sohrob Niazi</figcaption>
 </figure>
 </section>
+
 <section><h2>My introduction video</h2>
-<!-- Video controls, poster and source follow Week 2 videos.html. -->
+<!-- controls adds playback buttons, poster sets the preview image, and preload="auto" asks the browser to preload the video. -->
 <video controls poster="media/video-poster.jpg" preload="auto">
+
+<!-- Give the browser the video file location and its MP4 format. -->
 <source src="media/introduction.mp4" type="video/mp4">
+
+<!-- This message and download link appear if the video element is unsupported. -->
 Your browser does not support this video. <a href="media/introduction.mp4">Download my introduction video</a>.
-</video><h3>Introduction summary</h3>
+</video>
+
+<!-- this is a written summary of the introduction below the video. -->
+<h3>Introduction summary</h3>
 <p>Hi, my name is Sohrob Niazi, and I am currently studying Networking and IT Security at Ontario Tech University.</p>
 <p>Before switching to IT, I studied Computer Science at university for a year. My school projects include a Java racing game, a hotel reception program, a mines game, and a networking topology where I connected computers so they could communicate.</p>
 <p>Outside of school, I work as a Store Investigator at TJX. In my free time, I enjoy running, lifting weights, calisthenics, hanging out with friends, and going out to eat.</p>
 <p>This portfolio shares a little about me and some of the projects I have completed. Thanks for checking it out.</p>
 </section></article>
 </div>
+
+<!-- This Shows my email and copyright at the bottom of the page. Clicking my email opens an email app addressed to me. & copy; displays the copyright symbol. -->
 <footer><p>Contact: <a href="mailto:sohrob.niazi@ontariotechu.net">sohrob.niazi@ontariotechu.net</a></p>
 <p>&copy; 2026 Sohrob Niazi</p></footer>
 </div>

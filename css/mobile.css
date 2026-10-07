@@ -1,12 +1,29 @@
-/* Mobile uses the class 480px breakpoint and percentage widths. */
+/* Apply these styles when the screen is 480px wide or less. */
 @media only screen and (max-width:480px) {
+
+    /* Use most of the page width and centre the website.
+       Leave 10px of space above and below it. */
     #wrapper { width: 96%; margin: 10px auto; }
+
+    /* Reduce inner spacing and keep the page areas stacked. */
     header, footer, #content { padding: 15px; float: none; }
+
+    /* Make headings smaller for the narrow screen. */
     h1 { font-size: 30px; }
     h2 { font-size: 24px; }
+
+    /* Make the photo container wider on small screens. */
     .portrait { width: 90%; }
+
+    /* Let the form fill its container. */
     form { width: 100%; }
+
+    /* Make input fields 85% of their container's width. */
     input { width: 85%; }
+
+    /* Let buttons size themselves instead of using the input width. */
     .button { width: auto; }
+
+    /* Make the footer paragraph text smaller. */
     footer p { font-size: 12px; }
 }

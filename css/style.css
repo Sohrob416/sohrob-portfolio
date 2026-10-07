@@ -1,4 +1,4 @@
-/* Colours and spacing use the Week 1 and Week 3 CSS patterns. */
+/* Set the page font, remove default spacing and fade the background from darker cream at the top to lighter cream at the bottom. */
 body {
     font-family: Georgia, 'Times New Roman', serif;
     margin: 0;
@@ -6,22 +6,34 @@ body {
     color: #302B25;
     background: linear-gradient(to bottom, #DED3BA 0%, #F7F1E5 100%);
 }
+
+/* Centre the wrapper and give it a cream background and olive border. */
 #wrapper {
     margin: 25px auto;
     background-color: #F7F1E5;
     border: 1px solid #756D52;
 }
+
+/* Fade the header colours diagonally and add cream text and inner spacing. */
 header {
     background: linear-gradient(135deg, #542B35 0%, #773F43 100%);
     color: #F7F1E5;
     padding: 20px;
 }
+
+/* Set the heading sizes and colours. */
 h1 { font-size: 36px; }
 h2 { font-size: 28px; color: #542B35; }
 h3 { font-size: 22px; color: #542B35; }
+
+/* Add space between lines of paragraph text. */
 p { line-height: 1.7; }
+
+/* Use burgundy links, except inside the header where they are cream. */
 a { color: #542B35; }
 header a { color: #F7F1E5; }
+
+/* nav a selects the links inside the navigation menu. display: block puts each link on its own line. padding: 8px adds space inside each link. margin-bottom: 8px adds space below each link. border adds a 1px solid cream border around each link. text-decoration: none removes the underline. */
 nav a {
     display: block;
     padding: 8px;
@@ -29,19 +41,29 @@ nav a {
     border: 1px solid #F7F1E5;
     text-decoration: none;
 }
+
+/* :hover applies when the mouse is over a menu link. Set its background to cream and its text to burgundy. */
 nav a:hover { background-color: #F7F1E5; color: #542B35; }
+
+/* Add 20px inside the content area and 25px below each section. */
 #content { padding: 20px; }
 section { margin-bottom: 25px; }
+
+/* .intro selects the introduction. Add inner spacing, a sand background and an olive left border. */
 .intro {
     padding: 20px;
     background-color: #E8DFC9;
     border-left: 5px solid #756D52;
 }
+
+/* .project selects each project. Add inner spacing, space below it and an olive top border. */
 .project {
     padding: 15px;
     margin-bottom: 20px;
     border-top: 2px solid #756D52;
 }
+
+/* .button selects the buttons. Inline-block lets them sit beside each other. Add spacing, burgundy backgrounds, cream text and borders. Set the text size to 16px and remove link underlines. */
 .button {
     display: inline-block;
     padding: 10px;
@@ -52,7 +74,11 @@ section { margin-bottom: 25px; }
     font-size: 16px;
     text-decoration: none;
 }
+
+/* Change the button background when the mouse is over it. */
 .button:hover { background-color: #773F43; }
+
+/* Style inputs and the comments box with a 16px font, white background, dark brown text and olive borders. */
 input, textarea {
     font-family: Verdana, Geneva, Arial, sans-serif;
     font-size: 16px;
@@ -60,11 +86,21 @@ input, textarea {
     color: #302B25;
     border: 1px solid #756D52;
 }
+
+/* Add inner spacing to inputs. Make the comments box 90% of its container's width. */
 input { padding: 8px; }
 textarea { width: 90%; }
+
+/* Makes images and videos fill their container's width. */
 img, video { width: 100%; }
+
+/* Makes the photo container 60% wide with no left margin. */
 .portrait { width: 60%; margin-left: 0; }
+
+/* This adds 5px of space above the caption text. */
 figcaption { padding-top: 5px; }
+
+/* clear: both puts the footer below the floated columns.Add inner spacing, a sand background and an olive top border. */
 footer {
     clear: both;
     padding: 20px;

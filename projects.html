@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Set the character encoding and match the page width to the device screen. -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects | Sohrob Niazi</title>
+
+<!-- Load the styles shared by all pages. -->
 <link rel="stylesheet" href="css/style.css">
-<!-- Separate viewport stylesheets follow Week 3 responsive.html. -->
+
+<!-- Each link connects the page to a CSS file. rel="stylesheet" tells the browser the file contains styles. href gives the CSS file's location. media sets the screen width where those styles apply. laptop.css applies at 960px and wider. tablet.css applies from 481px to 959px. mobile.css applies at 480px and narrower. /head ends the page settings, and body starts the visible content. -->
 <link rel="stylesheet" href="css/laptop.css" media="only screen and (min-width:960px)">
 <link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:959px)">
 <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width:480px)">
 </head>
 <body>
+<!-- The wrapper lets CSS control the width and position of the page. -->
 <div id="wrapper">
-<!-- Semantic header, nav, article, section and footer follow semantic.html. -->
+
+<!-- header starts the header area. h1 displays my name as the main heading. p displays my program below my name. /h1 and /p close the heading and paragraph. The header stays open here because the navigation comes next. -->
 <header><h1>Sohrob Niazi</h1><p>Networking and IT Security Student</p>
+
+<!-- Navigation links connect the four pages. -->
 <nav><p><a href="index.html">Home</a> <a href="about.html">About Me</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a></p></nav></header>
+
 <div id="content">
+<!-- This section groups the school projects under one heading. -->
 <section><h2>School projects</h2>
 <p>These are some of the projects I have completed in Computer Science and Networking.</p>
+
+<!-- Each article contains one project. The shared project class applies the same CSS spacing and border to each article. H3 gives its heading. -->
 <article class="project"><h3>Java Racing Game</h3>
 <p>For a high school Computer Science assignment, I created a racing game in Java. Dashes represented the cars, and the program displayed their progress during the race and showed which car won.</p></article>
+
 <article class="project"><h3>Java Hotel Reception Program</h3>
 <p>For a high school Computer Science assignment, I created a hotel reception program in Java. The program assigned a room number to a guest.</p></article>
+
 <article class="project"><h3>Networking Topology</h3>
 <p>For a first-year networking assignment, I created a topology with three computers, routers, and other network devices. I configured the network so the computers could communicate with each other.</p></article>
+
 <article class="project"><h3>Java Mines Game</h3>
 <p>For a school assignment, I created a Java game where players selected spaces while avoiding hidden mines. Selecting a space containing a mine ended the game.</p></article>
 </section>
 </div>
+
+<!-- Shows contact information and copyright. Mailto opens an email app. -->
 <footer><p>Contact: <a href="mailto:sohrob.niazi@ontariotechu.net">sohrob.niazi@ontariotechu.net</a></p>
 <p>&copy; 2026 Sohrob Niazi</p></footer>
 </div>

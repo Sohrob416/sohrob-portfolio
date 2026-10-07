@@ -1,6 +1,15 @@
-/* Tablet: the class breakpoints with a stacked layout. */
+/* Make the website 94% of the available page width. */
 #wrapper { width: 94%; }
+
+/* Keep the header above the content instead of floating them. */
 header, #content { float: none; }
+
+/* Let menu links sit beside each other, with a small gap.
+   They wrap onto another line if there is not enough room. */
 nav a { display: inline-block; margin-right: 5px; }
+
+/* Make the form 90% of its container's width. */
 form { width: 90%; }
+
+/* Make the main heading slightly smaller. */
 h1 { font-size: 32px; }

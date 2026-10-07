@@ -1,37 +1,67 @@
 <!DOCTYPE html>
+<!-- English is the page language. -->
 <html lang="en">
 <head>
+<!-- UTF-8 supports characters such as the copyright symbol. -->
 <meta charset="UTF-8">
+
+<!-- Match the page width to the device screen for the responsive layout. -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- This title shows in the browser tab. -->
 <title>Contact Me | Sohrob Niazi</title>
+
+<!-- This loads the main styles shared by all four pages. -->
 <link rel="stylesheet" href="css/style.css">
-<!-- Separate viewport stylesheets follow Week 3 responsive.html. -->
+
+<!--  responsive.html: apply different CSS based on screen width. Laptop: 960px and above. Tablet: 481-959px. Mobile: up to 480px. -->
 <link rel="stylesheet" href="css/laptop.css" media="only screen and (min-width:960px)">
 <link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:959px)">
 <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width:480px)">
 </head>
 <body>
+
+<!-- The wrapper groups the page so CSS can set its width and position. -->
 <div id="wrapper">
-<!-- Semantic header, nav, article, section and footer follow semantic.html. -->
+
+<!-- Header, nav, section and footer . H1 is the main heading, and p creates a paragraph. -->
 <header><h1>Sohrob Niazi</h1><p>Networking and IT Security Student</p>
+
+<!-- Each href gives the destination of a navigation link. -->
 <nav><p><a href="index.html">Home</a> <a href="about.html">About Me</a> <a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a></p></nav></header>
+
+<!-- CSS uses the content id to position and style this area. -->
 <div id="content">
 <section><h2>Get in touch</h2>
 <p>You can email me at sohrob.niazi@ontariotechu.net or fill out the form below.</p><p>Submitting this form opens your email app. Review the message there and send it to contact me.</p>
-<!-- Form submission follows Week 3 form.html. Each label matches its input id. -->
+
+<!-- action sets the destination: mailto asks an email app to handle the form. method="post" submits the fields as form data.enctype="text/plain" requests plain-text formatting for that data. name identifies the form. This needs a configured email app and does not send email automatically. -->
 <form action="mailto:sohrob.niazi@ontariotechu.net" method="post" enctype="text/plain" name="contact_form">
+
+<!-- The label's for value matches the input's id to connect them. Clicking the label focuses the field. Br puts the field on the next line. -->
 <p><label for="name">Name</label><br>
+
+<!-- Text accepts a name. Id identifies the field in the page. Name identifies the field in the submitted data. Placeholder shows a hint while empty, required prevents an empty submission. -->
 <input type="text" id="name" name="name" placeholder="Enter your name" required></p>
+
 <p><label for="email">Email</label><br>
+<!-- Email asks the browser to check email address syntax dosent confirm that the address exists or belongs to the visitor. -->
 <input type="email" id="email" name="email" placeholder="Enter your email" required></p>
-<!-- pattern is an addition to the supplied lecture code; see README. -->
+
+<!-- Tel identifies a telephone field but does not check its format by itself. Pattern checks the whole value: [0-9] means a digit and {10} means ten digits. Title explains the expected format. Required prevents an empty value. -->
 <p><label for="phone">Cell number (10 digits, no spaces)</label><br>
 <input type="tel" id="phone" name="phone" placeholder="4165550123" pattern="[0-9]{10}" title="Enter exactly 10 digits without spaces or dashes" required></p>
+
 <p><label for="comments">Comments</label><br>
+<!-- Textarea allows multiple lines of text. Rows and cols set its initial dimensions, which CSS can adjust. Required means the visitor must enter something before submitting. -->
 <textarea id="comments" name="comments" rows="6" cols="30" required></textarea></p>
+
+<!-- Submit triggers browser validation before submission. Reset restores the fields to their initial values, which are empty here. Value sets each button's visible text; the button class applies CSS styling. -->
 <p><input class="button" type="submit" value="Submit"> <input class="button" type="reset" value="Reset"></p>
 </form></section>
 </div>
+
+<!-- The email link opens an email app addressed to me.  &copy; displays the copyright symbol. -->
 <footer><p>Contact: <a href="mailto:sohrob.niazi@ontariotechu.net">sohrob.niazi@ontariotechu.net</a></p>
 <p>&copy; 2026 Sohrob Niazi</p></footer>
 </div>
