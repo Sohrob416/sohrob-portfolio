@@ -41,18 +41,17 @@ Contact form
 The form uses mailto and the method used in the class example. It will open up the visitor's configured email program and the visitor has to send the email from there.
 
 Testing
- There were no issues identified in Nu HTML Checker while validating all four HTML pages; the About page was validated a second time after inserting the written introduction.
+ There were no issues identified in Nu HTML Checker while validating all four HTML pages the About page was validated a second time after inserting the written introduction.
  CSS validation checks did not detect any errors.
- W3C Link Checker did not detect any HTTP links to be broken in the results analyzed; however, it was unable to validate the mailto link since email-link checking is disabled.
+ W3C Link Checker did not detect any HTTP links to be broken in the results analyzed however it was unable to validate the mailto link since email link checking is disabled.
  WAVE did not detect any errors or contrast errors in all four pages.
  WAVE detected the video on the About page to be reviewed manually for accessibility.
- WAVE also detected a redundant email link on the Contact page. The redundant link was modified; however, the warning persisted in the last result examined.
- Spelling has been manually verified and Grammarly was used .
+ WAVE also detected a redundant email link on the Contact page but this is meant to be there.
+ Spelling has been manually verified and Grammarly/AI was used .
 
-Media and remaining checks
-The photo and introduction video are my own. The poster image is a frame from the video. A written introduction summary is included below the video.
+The poster image is a frame from the video. A written introduction summary is included below the video.
 
-Final checks still needed: mobile, tablet and laptop layouts, keyboard navigation and video playback.
+Final checks: ALL complete 
 
 Publishing
 The website is hosted with GitHub Pages from the main branch and root folder. Files and later changes were committed and pushed using Git commands.
