@@ -59,3 +59,5 @@ The website is hosted with GitHub Pages from the main branch and root folder. Fi
 
 Open locally
 Open index.html in a browser. Keep the HTML files, css folder and media folder together.
+
+I used Ai to help me pick my colors/style my website it also helped me with phone validation website used for this: (https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/tel?utm_source) and helped me fix my grammer for website and helped with comments.
